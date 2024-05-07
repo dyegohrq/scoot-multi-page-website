@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    /* Color */
+    --yellow: rgb(252, 183, 43);
+    --dark-navy: rgb(73, 85, 103);
+    --dim-grey: rgb(147, 156, 170);
+    --light-grey: rgb(229, 236, 244);
+    --snow: rgb(242, 245, 249);
+    --light-yellow: rgb(255, 244, 223);
+
+    /* Typography */
+
+    --font-lexend: "Lexend Deca", sans-serif;
+    --font-space: "Space Mono", monospace;
+}
