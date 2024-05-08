@@ -8,9 +8,246 @@
     --light-grey: rgb(229, 236, 244);
     --snow: rgb(242, 245, 249);
     --light-yellow: rgb(255, 244, 223);
+    --white: #fff;
 
     /* Typography */
 
     --font-lexend: "Lexend Deca", sans-serif;
     --font-space: "Space Mono", monospace;
+
+    /* Transition */
+    --transition: all 0.5s ease-in-out;
+
+    /* Padding */
+    --padding-mobile: 35px;
+    --padding-tablet: 45px;
+    --padding-descktop: 55px;
+
+    /* Breaking pointer */
+    --descktop: 1024;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--font-lexend);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    overflow-x: hidden;
+}
+
+/* h1 {
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    font-weight: bold;
+    font-family: var(--font-space);
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: 2.14px;
+    font-weight: bold;
+    font-family: var(--font-space);
+}
+
+h3 {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -1.79px;
+    font-weight: bold;
+    font-family: var(--font-space);
+}
+
+h4 {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07px;
+    font-weight: bold;
+    font-family: var(--font-space);
+} */
+
+p {
+
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.btn {
+    display: flex;
+    width: 195px;
+    height: 48px;
+    background-color: var(--yellow);
+    color: var(--white);
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    font-family: var(--font-space);
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--yellow);
+    border: 1px solid var(--yellow);
+}
+
+/* Header */
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70px;
+    padding: 0 var(--padding-mobile);
+    position: relative;
+}
+
+/* Header button */
+
+.header #button_header {
+    height: 100%;
+    background: transparent;
+    border: none;
+}
+
+.button_header,
+.bar {
+    position: relative;
+}
+
+.header .button_header .burgue {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    width: 30px;
+    height: 32px;
+}
+
+.header .button_header .burgue .bar{
+    width: 100%;
+    height: 5px;
+    background-color: var(--yellow);
+}
+
+.header .open .burgue #bar1 {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.header .open .burgue #bar2 {
+    background: transparent;
+}
+
+.header .open .burgue #bar3 {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Header logo */
+
+.header .logo {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .logo a {
+    color: var(--dark-navy);
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07px;
+    font-weight: bold;
+    font-family: var(--font-space);
+}
+
+/* Header navbar */
+.header .navbar {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.651);
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+    overflow: auto;
+    transition: var(--transition);
+}
+
+.header .navbar .nav-menu {
+    background: var(--dark-navy);
+    width: 70%;
+    height: 100%;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header .navbar .nav-menu .nav .nav_list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.header .navbar .nav-menu .nav .nav_list a {
+    font-size: 1.2em;
+    color: var(--light-grey);
+    font-family: var(--font-space);
+    font-weight: 400;
+}
+
+.header .active {
+    height: 100vh;
+    visibility: visible;
+}
+
+/* Main */
+
+
+/* Main-header */
+
+.main .main-header {
+    padding: 0 var(--padding-mobile);
+    background: url(../assets/images/home-hero-mobile.jpg) no-repeat top / cover;
+    width: 100%;
+    max-height: 650px;
+    aspect-ratio: 375 / 650;
+}
+
+.main .main-header .main-container {
+    width: 314px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 25px;
+    color: var(--white);
+    margin: auto;
+}
+
+.main .main-header .main-container h1{
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -1.79px;
+    font-weight: bold;
+    font-family: var(--font-space);
 }
