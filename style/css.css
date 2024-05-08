@@ -401,3 +401,18 @@ li {
     top: 0;
     right: -530px;
 }
+
+/* Sign up */
+
+.main .sign-up {
+    background:var(--dark-navy);
+    padding: 80px var(--padding-mobile);
+}
+
+.main .sign-up .sign-up-text h3 {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -1.43px;
+    font-weight: bold;
+    font-family: var(--font-space);
+}
