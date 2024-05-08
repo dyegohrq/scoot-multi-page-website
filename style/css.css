@@ -227,8 +227,8 @@ li {
     padding: 0 var(--padding-mobile);
     background: url(../assets/images/home-hero-mobile.jpg) no-repeat top / cover;
     width: 100%;
-    max-height: 650px;
-    aspect-ratio: 375 / 650;
+    max-height: 450px;
+    aspect-ratio: 375 / 450;
 }
 
 .main .main-header .main-container {
@@ -250,4 +250,12 @@ li {
     letter-spacing: -1.79px;
     font-weight: bold;
     font-family: var(--font-space);
+}
+
+.main .main-header .arrow-rigth {
+    background: url(../assets/patterns/right-arrow.svg) no-repeat center / cover;
+    width: 452px;
+    height: 151px;
+    position: relative;
+    left: -338px;
 }
