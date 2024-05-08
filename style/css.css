@@ -316,3 +316,88 @@ li {
 .main .main-content .main-content-container .description p{
     color: var(--dim-grey);
 }
+
+/* Main footer */
+
+.main-footer .main-footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    padding: 0 var(--padding-mobile);
+}
+
+.main-footer .main-footer-content .description {
+    position: relative;
+}
+
+.main-footer .main-footer-content .description .img {
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.main-footer .main-footer-content .telemetry .img-telemetry {
+    background-image: url(../assets/images/telemetry.jpg);
+}
+
+.main-footer .main-footer-content .city .img-city {
+    background-image: url(../assets/images/near-you.jpg);
+}
+
+.main-footer .main-footer-content .zero .img-zero {
+    background-image: url(../assets/images/payments.jpg);
+}
+
+.main .main-footer-content .description .text-description {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    width: 311px;
+    margin: 25px auto;
+}
+
+.main .main-footer-content .description .text-description h4 {
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: -1.07px;
+    font-weight: bold;
+    font-family: var(--font-space);
+    color: var(--dark-navy);
+}
+
+.main .main-footer-content .description .text-description p {
+    color: var(--dim-grey);
+}
+
+.main .main-footer-content .description .arrow-left {
+    background: url(../assets/patterns/left-downward-arrow.svg) no-repeat center /cover;
+    width: 741px;
+    height: 151px;
+    position: absolute;
+    top: 160px;
+}
+
+.main .main-footer-content .description .arrow-rigth {
+    background: url(../assets/patterns/right-arrow.svg) no-repeat center /cover;
+    width: 452px;
+    height: 151px;
+    position: absolute;
+    top: 0;
+    left: -215px;
+}
+
+.main .main-footer-content .zero .arrow-left {
+    background: url(../assets/patterns/left-downward-arrow.svg) no-repeat center /cover;
+    width: 741px;
+    height: 151px;
+    position: absolute;
+    top: 0;
+    right: -530px;
+}
