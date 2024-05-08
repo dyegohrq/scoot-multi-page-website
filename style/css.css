@@ -188,6 +188,7 @@ li {
     visibility: hidden;
     overflow: auto;
     transition: var(--transition);
+    z-index: 1;
 }
 
 .header .navbar .nav-menu {
@@ -214,7 +215,7 @@ li {
 }
 
 .header .active {
-    height: 100vh;
+    height: calc(100vh - 70px);
     visibility: visible;
 }
 
