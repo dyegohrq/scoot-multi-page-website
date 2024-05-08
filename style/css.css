@@ -4,6 +4,7 @@
     /* Color */
     --yellow: rgb(252, 183, 43);
     --dark-navy: rgb(73, 85, 103);
+    --bc-footer: rgb(51, 58, 68);
     --dim-grey: rgb(147, 156, 170);
     --light-grey: rgb(229, 236, 244);
     --snow: rgb(242, 245, 249);
@@ -447,3 +448,6 @@ li {
 }
 
 /* Footer */
+#footer {
+    background: var(--bc-footer);
+}
