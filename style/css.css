@@ -215,7 +215,7 @@ li {
 }
 
 .header .active {
-    height: calc(100vh - 105px);
+    height: calc(100vh - 70px);
     visibility: visible;
 }
 
