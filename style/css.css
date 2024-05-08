@@ -113,7 +113,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 80px;
+    height: 70px;
     padding: 0 var(--padding-mobile);
     position: relative;
 }
@@ -170,9 +170,9 @@ li {
 
 .header .logo a {
     color: var(--dark-navy);
-    font-size: 40px;
-    line-height: 48px;
-    letter-spacing: -1.79px;
+    font-size: 30px;
+    line-height: 28px;
+    letter-spacing: -1.07px;
     font-weight: bold;
     font-family: var(--font-space);
 }
@@ -180,7 +180,7 @@ li {
 /* Header navbar */
 .header .navbar {
     position: absolute;
-    top: 80px;
+    top: 70px;
     left: 0;
     background: rgba(0, 0, 0, 0.651);
     width: 100%;
@@ -215,7 +215,7 @@ li {
 }
 
 .header .active {
-    height: calc(100vh - 80px);
+    height: calc(100vh - 70px);
     visibility: visible;
 }
 
