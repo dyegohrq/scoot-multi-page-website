@@ -42,7 +42,6 @@ html {
     font-size: 15px;
     line-height: 25px;
     overflow-x: hidden;
-    background-color: blue;
 }
 
 /* h1 {
@@ -216,7 +215,7 @@ li {
 }
 
 .header .active {
-    height: calc(100vh - 70px);
+    height: calc(100vh - 105px);
     visibility: visible;
 }
 
