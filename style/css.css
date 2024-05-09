@@ -25,7 +25,7 @@
     --padding-descktop: 55px;
 
     /* Breaking pointer */
-    --descktop: 1024;
+    --descktop: 1024px;
 
     /* keyframe */
     --animation-fly-in: fly-in linear both;
@@ -155,6 +155,8 @@ li {
     height: 70px;
     padding: 0 var(--padding-mobile);
     position: relative;
+    max-width: var(--descktop);
+    margin: auto;
 }
 
 /* Header button */
@@ -255,7 +257,7 @@ li {
 }
 
 .header .navbar .nav-menu .nav .nav_list a:hover,
-.footer .navbar-footer .navlist-footer .navlink-footer a:hover
+.footer .footer-content .navbar-footer .navlist-footer .navlink-footer a:hover
 {
     color: var(--yellow);
 }
@@ -280,6 +282,7 @@ li {
 
 .main .main-header .main-container {
     width: 314px;
+    max-width: var(--descktop);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -312,6 +315,8 @@ li {
 
 .main .main-content {
     padding: 100px var(--padding-mobile);
+    max-width: var(--descktop);
+    margin: auto;
 }
 
 .main .main-content .main-content-container {
@@ -381,6 +386,8 @@ li {
     flex-direction: column;
     gap: 55px;
     padding: 0 var(--padding-mobile);
+    max-width: var(--descktop);
+    margin: auto;
 }
 
 .main-footer .main-footer-content .description {
@@ -480,18 +487,27 @@ li {
 
 /* Sign up */
 
-.main .sign-up {
+.main .sign-up{
+    background:var(--dark-navy);
+    margin: 100px auto 0 auto;
+}
+
+.main .sign-up .sign-up-contant {
+    width: 100%;
+    height: 100%;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 25px;
-    background:var(--dark-navy);
+    max-width: var(--descktop);
     padding: 80px var(--padding-mobile);
-    position: relative;
-    margin-top: 100px;
+    margin: auto;
 }
 
-.main .sign-up .sign-up-text h3 {
+
+
+.main .sign-up .sign-up-contant .sign-up-text h3 {
     font-size: 32px;
     line-height: 32px;
     letter-spacing: -1.43px;
@@ -501,13 +517,13 @@ li {
     color: var(--white);
 }
 
-.main .sign-app {
+.main .sign-up-contant .sign-app {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
 }
 
-.main .sign-app i img {
+.main .sign-up-contant .sign-app i img {
     width: 152px;
     height: 48px;
     object-fit: contain;
@@ -530,14 +546,18 @@ li {
 }
 
 .footer,
-.footer .footer-container {
+.footer .footer-content .footer-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 55px;
+    gap: 55px;    
 }
 
-.footer .footer-container .logo-footer a {
+.footer .footer-content .footer-container {
+    margin-bottom: 55px;
+}
+
+.footer .footer-content .footer-container .logo-footer a {
     color: var(--white);
     font-size: 45px;
     line-height: 28px;
@@ -546,33 +566,33 @@ li {
     font-family: var(--font-space);
 }
 
-.footer .navbar-footer .navlist-footer {
+.footer .footer-content .navbar-footer .navlist-footer {
     display: grid;
     gap: 15px;
     font-size: 1.2em;
 }
 
-.footer .navbar-footer .navlist-footer .navlink-footer {
+.footer .footer-content .navbar-footer .navlist-footer .navlink-footer {
     text-align: center;
 }
 
-.footer .navbar-footer .navlist-footer .navlink-footer a {
+.footer .footer-content .navbar-footer .navlist-footer .navlink-footer a {
     color: var(--dim-grey);
     transition: var(--transition);
 }
 
-.footer .social-media {
+.footer .footer-content .social-media {
     display: flex;
     gap: 25px;
 }
 
-.footer .social-media a i{
+.footer .footer-content .social-media a i{
     font-size: 2em;
     color: var(--yellow);
     transition: var(--transition);
 }
 
-.footer .social-media a i:hover{
+.footer .footer-content .social-media a i:hover{
     color: var(--dim-grey);
 }
 
@@ -777,18 +797,36 @@ li {
         padding: var(--padding-mobile);
     }
 
+    .footer .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
     .footer, 
-    .footer .footer-container {
+    .footer .footer-content .footer-container {
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .footer .navbar-footer .navlist-footer {
+    .footer .footer-content .footer-container {
+        margin: 0;
+    }
+
+    .footer .footer-content .navbar-footer .navlist-footer {
         display: flex;
         gap: 25px;
     }
 
-    .footer .navbar-footer .navlist-footer .navlink-footer a {
+    .footer .footer-content .navbar-footer .navlist-footer .navlink-footer a {
         font-size: 21px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    #header {
+        padding: 0;
     }
 }
