@@ -319,13 +319,13 @@ li {
     gap: 45px;
 }
 
+
 .main .main-content .main-content-container .description{
     display: flex;
     width: 315px;
     margin: auto;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     justify-content: space-between;
     gap: 15px;
     animation: var(--animation-fade);
@@ -339,6 +339,14 @@ li {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.main .main-content .main-content-container .description .text-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
 }
 
 .main .main-content .main-content-container .locate .img-locate {
@@ -626,11 +634,17 @@ li {
     }
 
     .main .main-header {
+        position: relative;
         padding: 0 var(--padding-tablet);
         background: url(../assets/images/home-hero-tablet.jpg) no-repeat top / cover;
         width: 100%;
         max-height: 650px;
         aspect-ratio: 768 / 650;
+    }
+
+    .main .main-content {
+        padding: 100px var(--padding-tablet);
+        position: relative;
     }
 
     .main .main-header .main-container {
@@ -658,5 +672,88 @@ li {
         position: relative;
         left: -162px;
         bottom: 50px;
+    }
+
+    .main .main-header .complited-circle{
+        display: flex;
+        gap: 35px;
+        position: absolute;
+        right: -50px;
+        bottom: 50px;
+    }
+
+    .main .main-header .complited-circle .circle {
+        background-color: transparent;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 4px solid var(--white);
+    }
+
+    .main .main-header .complited-circle #cicle3 {
+        background-color: var(--white);
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        border: none;
+    }
+
+    .main .main-content .line {
+        background: var(--light-grey);
+        width: 25px;
+        height: 80%;
+        position: absolute;
+        top: 0;
+        margin-left: 33px;
+    }
+
+    .main .main-content .main-content-container .description {
+        width: 100%;
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .main .main-content .main-content-container .description .img {
+        width: 96px;
+        height: 96px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .main .main-content .main-content-container .description .text-description {
+        align-items: self-start;
+        text-align: left;
+        width: 67%;
+    }
+
+    .main .main-content .main-content-container .description h4 {
+        font-size: 25px;
+    }
+
+    .main .main-content .main-content-container .description p,
+    .main .main-footer-content .description .text-description p {
+        font-size: 17px;
+    }
+
+    .main-footer .main-footer-content .description .img {
+        width: 445px;
+        height: 445px;
+    }
+
+    .main .main-footer-content .description .text-description {
+        gap: 35px;
+        margin: 35px auto;
+        width: 647px;
+    }
+
+    .main .main-footer-content .description .text-description h4 {
+        font-size: 50px;
+        line-height: 50px;
+        width: 485px;
+    }
+
+    .main .main-footer-content .description .arrow-left {
+        top: 297px;
     }
 }
