@@ -756,4 +756,29 @@ li {
     .main .main-footer-content .description .arrow-left {
         top: 297px;
     }
+
+    .main .sign-up .sign-up-text h3 {
+        width: 376px;
+        font-size: 43px;
+        line-height: 45px;
+    }
+
+    #footer {
+        padding: var(--padding-mobile);
+    }
+
+    .footer, 
+    .footer .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer .navbar-footer .navlist-footer {
+        display: flex;
+        gap: 25px;
+    }
+
+    .footer .navbar-footer .navlist-footer .navlink-footer a {
+        font-size: 21px;
+    }
 }
