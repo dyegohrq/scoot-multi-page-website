@@ -26,6 +26,13 @@
 
     /* Breaking pointer */
     --descktop: 1024;
+
+    /* keyframe */
+    --animation-fly-in: fly-in linear both;
+    --animation-fade: fade linear both;
+
+    --animation-timeline: view(block);
+    --animation-range: cover 0% cover 35%
 }
 
 *{
@@ -321,9 +328,9 @@ li {
     text-align: center;
     justify-content: space-between;
     gap: 15px;
-    animation:fade linear both;
-    animation-timeline: view(block);
-    animation-range: cover 0% cover 40%;
+    animation: var(--animation-fade);
+    animation-timeline: var(--animation-timeline);
+    animation-range: var(--animation-range);
 }
 
 .main .main-content .main-content-container .description .img {
@@ -403,9 +410,9 @@ li {
     gap: 25px;
     width: 311px;
     margin: 25px auto;
-    animation:fade linear both;
-    animation-timeline: view(block);
-    animation-range: cover 0% cover 40%;
+    animation: var(--animation-fade);
+    animation-timeline: var(--animation-timeline);
+    animation-range: var(--animation-range);
 }
 
 .main .main-footer-content .description .text-description h4 {
@@ -452,14 +459,14 @@ li {
 .main .main-footer-content .zero .img-zero,
 .main .main-footer-content .description .arrow-left {
     animation: fly-in linear both;
-    animation-timeline: view(block);
-    animation-range: cover 0% cover 35%
+    animation-timeline: var(--animation-timeline);
+    animation-range: var(--animation-range);
 }
 
 .main-footer .main-footer-content .city .img-city {
     animation: fly-in-right linear both;
-    animation-timeline: view(block);
-    animation-range: cover 0% cover 35%
+    animation-timeline: var(--animation-timeline);
+    animation-range: var(--animation-range);
 }
 
 
