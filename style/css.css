@@ -545,6 +545,11 @@ li {
     
 }
 
+.footer .footer-content {
+    margin: auto;
+    max-width: var(--descktop);
+}
+
 .footer,
 .footer .footer-content .footer-container {
     display: flex;
