@@ -21,7 +21,7 @@
 
     /* Padding */
     --padding-mobile: 35px;
-    --padding-tablet: 45px;
+    --padding-tablet: 40px;
     --padding-descktop: 55px;
 
     /* Breaking pointer */
@@ -566,4 +566,97 @@ li {
 
 .footer .social-media a i:hover{
     color: var(--dim-grey);
+}
+
+@media screen and (min-width: 768px) {
+    .btn {
+        width: 211px;
+        height: 60px;
+        font-size: 18px;
+    }
+
+    #header {
+        height: 90px;
+        padding: 0 var(--padding-tablet);
+        gap: 55px;
+    }
+
+    .header #button_header {
+        display: none;
+    }
+
+    .header .logo {
+        width: auto;
+    }
+
+    .header .logo a {
+        font-size: 38px;
+        line-height: 38px;
+    }
+
+    .header .navbar {
+        position: static;
+        background: transparent;
+        width: 100%;
+        height: auto;
+        visibility: visible;
+    }
+
+    .header .navbar .nav-menu {
+        background: transparent;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header .navbar .nav-menu .nav .nav_list {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .header .navbar .nav-menu .nav .nav_list a {
+        color: var(--dim-grey);
+        font-family: var(--font-space);
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    .main .main-header {
+        padding: 0 var(--padding-tablet);
+        background: url(../assets/images/home-hero-tablet.jpg) no-repeat top / cover;
+        width: 100%;
+        max-height: 650px;
+        aspect-ratio: 768 / 650;
+    }
+
+    .main .main-header .main-container {
+        width: 100%;
+    }
+
+    .main .main-header .main-container h1 {
+        width: 490px;
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -2.5px;
+        font-weight: bold;
+        font-family: var(--font-space);
+    }
+
+    .main .main-header .main-container p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .main .main-header .arrow-rigth {
+        background: url(../assets/patterns/right-arrow.svg) no-repeat center / cover;
+        width: 452px;
+        height: 151px;
+        position: relative;
+        left: -162px;
+        bottom: 50px;
+    }
 }
