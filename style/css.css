@@ -105,7 +105,38 @@ li {
 .btn:hover {
     background-color: transparent;
     color: var(--yellow);
-    border: 1px solid var(--yellow);
+    border: 2px solid var(--yellow);
+}
+
+/* Keyframe */
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fly-in {
+    from {
+        transform: translateX(200px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fly-in-right {
+    from {
+        transform: translateX(-200px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
 }
 
 /* Header */
@@ -213,6 +244,13 @@ li {
     color: var(--light-grey);
     font-family: var(--font-space);
     font-weight: 400;
+    transition: var(--transition);
+}
+
+.header .navbar .nav-menu .nav .nav_list a:hover,
+.footer .navbar-footer .navlist-footer .navlink-footer a:hover
+{
+    color: var(--yellow);
 }
 
 .header .active {
@@ -283,6 +321,9 @@ li {
     text-align: center;
     justify-content: space-between;
     gap: 15px;
+    animation:fade linear both;
+    animation-timeline: view(block);
+    animation-range: cover 0% cover 40%;
 }
 
 .main .main-content .main-content-container .description .img {
@@ -362,6 +403,9 @@ li {
     gap: 25px;
     width: 311px;
     margin: 25px auto;
+    animation:fade linear both;
+    animation-timeline: view(block);
+    animation-range: cover 0% cover 40%;
 }
 
 .main .main-footer-content .description .text-description h4 {
@@ -402,6 +446,22 @@ li {
     top: 0;
     right: -530px;
 }
+
+/* Main footer keyfram */
+.main .main-footer-content .telemetry .img-telemetry,
+.main .main-footer-content .zero .img-zero,
+.main .main-footer-content .description .arrow-left {
+    animation: fly-in linear both;
+    animation-timeline: view(block);
+    animation-range: cover 0% cover 35%
+}
+
+.main-footer .main-footer-content .city .img-city {
+    animation: fly-in-right linear both;
+    animation-timeline: view(block);
+    animation-range: cover 0% cover 35%
+}
+
 
 /* Sign up */
 
@@ -450,4 +510,53 @@ li {
 /* Footer */
 #footer {
     background: var(--bc-footer);
+    padding: 80px var(--padding-mobile);
+    
+}
+
+.footer,
+.footer .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 55px;
+}
+
+.footer .footer-container .logo-footer a {
+    color: var(--white);
+    font-size: 45px;
+    line-height: 28px;
+    letter-spacing: -1.07px;
+    font-weight: bold;
+    font-family: var(--font-space);
+}
+
+.footer .navbar-footer .navlist-footer {
+    display: grid;
+    gap: 15px;
+    font-size: 1.2em;
+}
+
+.footer .navbar-footer .navlist-footer .navlink-footer {
+    text-align: center;
+}
+
+.footer .navbar-footer .navlist-footer .navlink-footer a {
+    color: var(--dim-grey);
+    transition: var(--transition);
+}
+
+.footer .social-media {
+    display: flex;
+    gap: 25px;
+}
+
+.footer .social-media a i{
+    font-size: 2em;
+    color: var(--yellow);
+    transition: var(--transition);
+}
+
+.footer .social-media a i:hover{
+    color: var(--dim-grey);
 }
