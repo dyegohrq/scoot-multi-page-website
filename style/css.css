@@ -753,8 +753,18 @@ li {
         width: 485px;
     }
 
-    .main .main-footer-content .description .arrow-left {
+    .main .main-footer-content .telemetry  .arrow-left {
         top: 297px;
+    }
+
+    .main .main-footer-content .description .arrow-rigth {
+        top: 13px;
+        left: -152px;
+    }
+
+    .main .main-footer-content .zero .arrow-left {
+        top: 90px;
+        right: -419px;
     }
 
     .main .sign-up .sign-up-text h3 {
