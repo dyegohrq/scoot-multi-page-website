@@ -151,3 +151,41 @@ h4 {
 .main .main-page .location-apply .container-location .btn {
     width: 100%;
 }
+
+@media screen and (min-width: 768px) {
+    .main .main-header-page .title-page .title-page-content {
+        height: 200px;
+        background: url(../assets/images/careers-locations-hero-tablet.jpg) no-repeat center / cover;
+        justify-content: space-around;
+        aspect-ratio: 768 / 200;
+    }
+
+    .main .main-header-page .title-page .title-page-content .circle-title {
+        right: -14%;
+    }
+
+    .main .main-page .location-apply .container-location {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .main .main-page .location-apply .container-location .btn {
+        width: 195px;
+    }
+
+    .main .main-page .location-apply .container-location .description-location h3, 
+    .main .main-page .location-apply .container-location .description-location span {
+        color: var(--dark-navy);
+        text-align: left;
+    }
+
+    .main .main-page .location-apply .container-location .description-location h3 {
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -1.07px;
+        font-weight: bold;
+        font-family: var(--font-space);
+        margin-bottom: 5px;
+    }
+}

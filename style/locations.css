@@ -137,3 +137,16 @@ h4 {
     color: var(--dark-navy);
 }
 
+@media screen and (min-width: 768px) {
+    .main .main-header-page .title-page .title-page-content .circle-title {
+        right: -12%;
+    }
+
+    .main .main-page .demonstration .demonstration-content .img {
+        background: url(../assets/images/world-map-desktop.png) no-repeat center / contain;
+        width: 100%;
+        height: 543px;
+        position: relative;
+    }    
+}
+
