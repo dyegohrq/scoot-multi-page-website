@@ -178,6 +178,7 @@ h4 {
     margin-top: 35px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 25px;
     
     h2 {
@@ -254,9 +255,9 @@ h4 {
     gap: 25px;
 
     h2 {
-        font-size: 35px;
-        line-height: 48px;
-        letter-spacing: -1.79px;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -1.07px;
         font-weight: bold;
         font-family: var(--font-space);
         color: var(--dark-navy);
