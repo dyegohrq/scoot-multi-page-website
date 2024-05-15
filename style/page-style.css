@@ -457,3 +457,35 @@ h4 {
         }    
     }    
 }
+
+@media screen and (min-width: 1280px) {    
+    .main .main-header-page .title-page .title-page-content {
+        background: url(../assets/images/about-hero-desktop.jpg) no-repeat center / cover;
+        aspect-ratio: 1440 / 200;
+    }
+
+    .main .main-page .demonstration .demonstration-content {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }  
+    
+    .main .main-page .demonstration .demonstration-content .text-demonstration {
+        text-align: left;
+
+        p {
+            width: 446px;
+        }
+    }
+
+    .main .demonstration .demonstration-content .img-desmontration-1 {
+        order: 1;
+    }
+
+    .main .main-page .demonstration .demonstration-content .arrow-img-right {
+        top: 59%;
+        right: -6%;
+        z-index: 1;
+    }
+}
