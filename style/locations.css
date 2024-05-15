@@ -148,5 +148,12 @@ h4 {
         height: 543px;
         position: relative;
     }    
+
+    .main .main-page .demonstration .demonstration-content .cities {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        margin-bottom: 65px;
+    } 
 }
 
