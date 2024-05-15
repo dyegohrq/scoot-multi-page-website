@@ -96,6 +96,18 @@ h4 {
     }
 }
 
+@keyframes opacity {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* Main */
 
 .main .main-header-page .title-page{
@@ -123,7 +135,7 @@ h4 {
 }
 
 .main .main-page {
-    padding: 55px var(--padding-mobile);
+    padding: 55px var(--padding-mobile) 0 var(--padding-mobile); 
 }
 
 .main .main-page .demonstration {
@@ -254,5 +266,74 @@ h4 {
         color: var(--dim-grey);
         width: 316px;
         margin: auto;
+    }
+}
+
+.faqs .faqs-container {
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.faqs .faqs-container .title-faqs {
+    text-align: center;
+    color: var(--dark-navy);
+}
+
+.faqs .faqs-container .works,
+.faqs .faqs-container .driving {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    h2 {
+        color: var(--dark-navy);
+        text-align: center;
+    }
+
+    .container {
+        background-color: var(--snow);
+        padding: 30px;
+        cursor: pointer;
+    }
+
+    .container .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .container .title h3 {
+        color: var(--dark-navy);
+        width: 212px;
+    }
+
+    .container .title i {
+        color: var(--yellow);
+    }
+
+    .container .anwer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 1.4s ease;
+    }
+
+    .container .anwer p {
+        margin-top: 25px;
+        color: var(--dark-navy);
+    }
+
+    .container.active .anwer{
+        max-height: 600px;
+        animation: opacity 1s ease-in-out;
+    }
+
+    .container.active i{
+        transform: rotate(180deg);
+    }
+
+    .container i {
+        transition: transform .8s ease-in;
     }
 }
