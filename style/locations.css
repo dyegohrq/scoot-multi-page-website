@@ -157,3 +157,24 @@ h4 {
     } 
 }
 
+@media screen and (min-width: 1280px) {
+    .main .main-page .demonstration .demonstration-content {
+        flex-direction: column;
+    }
+
+    .main .main-page .demonstration .demonstration-content .img {
+        order: 0;
+    }
+
+    .main .main-page .demonstration .demonstration-content .cities {
+        width: 100%;
+    }
+
+    .main .main-page .demonstration .demonstration-content .text-demonstration {
+        text-align: left;
+        align-items: center;
+        flex-direction: row;
+        gap: 41px;
+    }
+}
+

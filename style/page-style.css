@@ -222,6 +222,7 @@ h4 {
     align-items: center;
     text-align: center;
     position: relative;
+    margin-bottom: 55px;
 }
 
 .main .our-content .our-container .img-our img {
@@ -339,6 +340,12 @@ h4 {
     }
 }
 
+.group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 @media screen and (min-width: 768px) {
     .main .main-header-page .title-page .title-page-content {
         height: 200px;
@@ -374,7 +381,11 @@ h4 {
 
     .main .main-header-page .title-page .title-page-content .circle-title #circle3 {
         background-color: var(--white);
-    }    
+    }   
+    
+    .main .main-page {
+        padding: 160px var(--padding-mobile) 0 var(--padding-mobile);
+    }
 
     .main .demonstration .demonstration-content .img {
         position: relative;
@@ -483,9 +494,47 @@ h4 {
         order: 1;
     }
 
+    .main .demonstration .demonstration-content .img {
+        margin: 0;
+    }
+
     .main .main-page .demonstration .demonstration-content .arrow-img-right {
         top: 59%;
-        right: -6%;
+        right: -34%;
         z-index: 1;
+    }
+
+    .main .main-page .demonstration .demonstration-content .arrow-img-left {
+        left: -28%;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .main .our-content .our-container .text-our {
+        p {
+            color: var(--dim-grey);
+            width: 100%;
+            margin: auto;
+        }
+    }
+
+    .faqs .faqs-container .works, .faqs .faqs-container .driving {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+    }
+
+    .group {
+        display: grid;
+        gap: 25px;
+    }
+
+    .faqs .faqs-container .works, .faqs .faqs-container .driving {
+        h2 {
+            width: 100%;
+        }
     }
 }

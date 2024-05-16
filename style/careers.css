@@ -189,3 +189,25 @@ h4 {
         margin-bottom: 5px;
     }
 }
+
+@media screen and (min-width: 1280px) {
+    .main .main-page .demonstration .demonstration-content {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .main .demonstration .demonstration-content .img-desmontration-1 {
+        margin: 0;
+    }
+
+    .main .main-page .demonstration .demonstration-content .arrow-img-right {
+        top: 64%;
+    }
+
+    .main .main-page .demonstration .demonstration-content .text-demonstration {
+        text-align: left;
+        align-items: start;
+    }
+}

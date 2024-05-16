@@ -28,7 +28,6 @@
     --descktop: 1265px;
 
     /* keyframe */
-    --animation-fly-in: fly-in linear both;
     --animation-fade: fade linear both;
 
     --animation-timeline: view(block);
@@ -50,6 +49,17 @@ html {
     font-size: 15px;
     line-height: 25px;
     overflow-x: hidden;
+}
+
+#header,
+.main .main-header .main-container,
+.main .main-content,
+.main .main-page,
+.main-footer .main-footer-content,
+.main .sign-up .sign-up-contant,
+.footer .footer-content  {
+    max-width: 1310px;
+    margin: auto;
 }
 
 /* h1 {
@@ -116,30 +126,12 @@ li {
 @keyframes fade {
     from {
         opacity: 0;
+        transform: translateX(-10px);
     }
 
     to {
         opacity: 1;
-    }
-}
-
-@keyframes fly-in {
-    from {
-        transform: translateX(200px);
-    }
-
-    to {
-        transform: translateX(0);
-    }
-}
-
-@keyframes fly-in-right {
-    from {
-        transform: translateX(-200px);
-    }
-
-    to {
-        transform: translateX(0);
+        transform: translateX(0px);
     }
 }
 
@@ -470,13 +462,13 @@ li {
 .main .main-footer-content .telemetry .img-telemetry,
 .main .main-footer-content .zero .img-zero,
 .main .main-footer-content .description .arrow-left {
-    animation: fly-in linear both;
+    animation: fade linear both;
     animation-timeline: var(--animation-timeline);
     animation-range: var(--animation-range);
 }
 
 .main-footer .main-footer-content .city .img-city {
-    animation: fly-in-right linear both;
+    animation: fade linear both;
     animation-timeline: var(--animation-timeline);
     animation-range: var(--animation-range);
 }
@@ -1007,14 +999,6 @@ li {
 }
 
 @media screen and (min-width: 1500px) {
-    #header,
-    .main .main-header .main-container,
-    .main .main-content,
-    .main-footer .main-footer-content,
-    .main .sign-up .sign-up-contant,
-    .footer .footer-content  {
-        max-width: 1310px;
-    }
 
     .main .main-content .line {
         left: -28%;
